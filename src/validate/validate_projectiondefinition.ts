@@ -3,6 +3,7 @@ import {ProjectionDefinitionT, PropertyValueSpecification} from '../types.g';
 import {getType} from '../util/get_type';
 
 export function validateProjectionDefinition(options) {
+    return [];
 
     const key = options.key;
     let value = options.value;
