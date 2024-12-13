@@ -4587,10 +4587,6 @@
         "parameters": [
           "zoom"
         ]
-      },
-      "name": {
-        "type": "string",
-        "doc": "The 'name' property specifies the projection name, which is required if you intend to use this style in Mapbox maps for globe projection. This property helps define the specific projection system used in the style and ensures compatibility with Mapbox's globe rendering."
       }
     },
     "name": {
