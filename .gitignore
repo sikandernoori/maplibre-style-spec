@@ -1,7 +1,7 @@
 node_modules
 .eslintcache
 tsc
-dist
+# dist
 .DS_Store
 */**/*.g.ts
 .cache
