@@ -50,7 +50,7 @@ export function validateRasterDEMSource(
                 styleSpec
             }));
         } else {
-            errors.push(new ValidationError(key, rasterDEM[key], `unknown property "${key}"`));
+            errors.push(new ValidationError(key, rasterDEM[key], `unknown property-5 "${key}"`));
         }
     }
 

@@ -33,7 +33,7 @@ export function validateTerrain(
                 styleSpec
             }));
         } else {
-            errors = errors.concat([new ValidationError(key, terrain[key], `unknown property "${key}"`)]);
+            errors = errors.concat([new ValidationError(key, terrain[key], `unknown property-7 "${key}"`)]);
         }
     }
 

@@ -39,7 +39,7 @@ export function validateLight(options) {
                 styleSpec
             }));
         } else {
-            errors = errors.concat([new ValidationError(key, light[key], `unknown property "${key}"`)]);
+            errors = errors.concat([new ValidationError(key, light[key], `unknown property-1 "${key}"`)]);
         }
     }
 

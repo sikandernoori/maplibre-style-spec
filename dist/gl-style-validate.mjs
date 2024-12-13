@@ -5446,7 +5446,7 @@ function validateObject(options) {
             validateElement = validateSpec;
         }
         else {
-            errors.push(new ValidationError(key, object[objectKey], `unknown property "${objectKey}"`));
+            errors.push(new ValidationError(key, object[objectKey], `unknown property-2 "${objectKey}"`));
             continue;
         }
         errors = errors.concat(validateElement({
@@ -5933,7 +5933,7 @@ function validateProperty(options, propertyType) {
     }
     const valueSpec = options.valueSpec || layerSpec[propertyKey];
     if (!valueSpec) {
-        return [new ValidationError(key, value, `unknown property "${propertyKey}"`)];
+        return [new ValidationError(key, value, `unknown property-4 "${propertyKey}"`)];
     }
     let tokenMatch;
     if (getType(value) === 'string' && supportsPropertyExpression(valueSpec) && !valueSpec.tokens && (tokenMatch = /^{([^}]+)}$/.exec(value))) {
@@ -6147,7 +6147,7 @@ function validateRasterDEMSource(options) {
             }));
         }
         else {
-            errors.push(new ValidationError(key, rasterDEM[key], `unknown property "${key}"`));
+            errors.push(new ValidationError(key, rasterDEM[key], `unknown property-5 "${key}"`));
         }
     }
     return errors;
@@ -6299,7 +6299,7 @@ function validateLight(options) {
             }));
         }
         else {
-            errors = errors.concat([new ValidationError(key, light[key], `unknown property "${key}"`)]);
+            errors = errors.concat([new ValidationError(key, light[key], `unknown property-1 "${key}"`)]);
         }
     }
     return errors;
@@ -6329,7 +6329,7 @@ function validateSky(options) {
             }));
         }
         else {
-            errors = errors.concat([new ValidationError(key, sky[key], `unknown property "${key}"`)]);
+            errors = errors.concat([new ValidationError(key, sky[key], `unknown property-6 "${key}"`)]);
         }
     }
     return errors;
@@ -6361,7 +6361,7 @@ function validateTerrain(options) {
             }));
         }
         else {
-            errors = errors.concat([new ValidationError(key, terrain[key], `unknown property "${key}"`)]);
+            errors = errors.concat([new ValidationError(key, terrain[key], `unknown property-7 "${key}"`)]);
         }
     }
     return errors;

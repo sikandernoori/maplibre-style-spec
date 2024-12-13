@@ -31,7 +31,7 @@ export function validateObject(options): Array<ValidationError> {
         } else if (elementSpecs['*']) {
             validateElement = validateSpec;
         } else {
-            errors.push(new ValidationError(key, object[objectKey], `unknown property "${objectKey}"`));
+            errors.push(new ValidationError(key, object[objectKey], `unknown property-2 "${objectKey}"`));
             continue;
         }
 

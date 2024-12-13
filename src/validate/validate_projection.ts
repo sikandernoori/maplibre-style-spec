@@ -36,7 +36,7 @@ export function validateProjection(options: ValidateProjectionOptions) {
                 styleSpec
             }));
         } else {
-            errors = errors.concat([new ValidationError(key, projection[key], `unknown property "${key}"`)]);
+            errors = errors.concat([new ValidationError(key, projection[key], `unknown property-3 "${key}"`)]);
         }
     }
 

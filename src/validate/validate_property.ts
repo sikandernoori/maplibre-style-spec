@@ -29,7 +29,7 @@ export function validateProperty(options, propertyType) {
 
     const valueSpec = options.valueSpec || layerSpec[propertyKey];
     if (!valueSpec) {
-        return [new ValidationError(key, value, `unknown property "${propertyKey}"`)];
+        return [new ValidationError(key, value, `unknown property-4 "${propertyKey}"`)];
     }
 
     let tokenMatch;
