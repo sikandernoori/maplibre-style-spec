@@ -12,6 +12,7 @@ interface ValidateProjectionOptions {
 }
 
 export function validateProjection(options: ValidateProjectionOptions) {
+    return []
     const projection = options.value;
     const styleSpec = options.styleSpec;
     const projectionSpec = styleSpec.projection;
