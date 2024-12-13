@@ -135,7 +135,8 @@
           ["zoom"],
           10, "vertical-perspective",
           12, "mercator"
-        ]
+        ],
+        "name": "globe"
       }
     },
     "terrain": {
