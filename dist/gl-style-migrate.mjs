@@ -2075,6 +2075,9 @@ var projection = {
 			parameters: [
 				"zoom"
 			]
+		},
+		name: {
+			type: "string"
 		}
 	},
 	name: {
